@@ -19,8 +19,10 @@ document.getElementById('donate-at-noakhali').addEventListener('click', function
         const title = document.getElementById('title-flood').innerText;
         const div = document.createElement('div');
         div.innerHTML = `
-          <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
-               <p class="text-base font-light pb-5"> ${date} </p>
+          <div class=" border rounded-lg p-5 my-5">
+           <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
+                <p class="text-base font-light pb-5"> ${date} </p>
+         </div>
         `
         document.getElementById('donation-history').appendChild(div);
        
@@ -48,8 +50,10 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
          const title = document.getElementById('title-feni').innerText;
          const div = document.createElement('div');
          div.innerHTML = `
+           <div class=" border rounded-lg p-5 my-5">
            <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
                 <p class="text-base font-light pb-5"> ${date} </p>
+         </div>
          `
          document.getElementById('donation-history').appendChild(div);
         
@@ -77,8 +81,10 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
          const title = document.getElementById('title-aid-injured').innerText;
          const div = document.createElement('div');
          div.innerHTML = `
+         <div class=" border rounded-lg p-5 my-5">
            <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
                 <p class="text-base font-light pb-5"> ${date} </p>
+         </div>
          `
          document.getElementById('donation-history').appendChild(div);
         
