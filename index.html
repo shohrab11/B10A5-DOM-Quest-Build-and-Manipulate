@@ -33,11 +33,12 @@
         <div class="w-4/5 mx-auto">
            <div>
                 <div class="flex justify-center gap-5"> 
-                    <button class="btn bg-[#B4F461] font-[#111] font-bold px-6" type="button">Donation</button>
-                    <button class="btn bg-white border-[#1111114d] font-[#111] font-bold px-6" type="button">History</button>
+                    <button id="donation-btn" class="btn bg-[#B4F461] font-[#111] font-bold px-6" type="button">Donation</button>
+                    <button id="history-btn" class="btn bg-white border-[#1111114d] font-[#111] font-bold px-6" type="button">History</button>
                 </div>
            </div>
-           <div class="lg:flex gap-5 p-8 border rounded-lg my-6">
+           <div id="main-donation">
+            <div  class="lg:flex gap-5 p-8 border rounded-lg my-6">
                 <div class="lg:w-1/2">
                     <img src="assets/noakhali.png" alt="">
                 </div>
@@ -78,8 +79,8 @@
                     <button id="donate-at-feni" class="btn bg-[#B4F461] text-black">Donate Now</button>
                   </div>
             </div>
-       </div>
-       <div class="lg:flex gap-5 p-8 border rounded-lg my-6">
+           </div>
+           <div class="lg:flex gap-5 p-8 border rounded-lg my-6">
         <div class="lg:w-1/2">
             <img src="assets/quota-protest.png" alt="">
         </div>
@@ -99,10 +100,11 @@
                 <button id="donate-at-injure" class="btn bg-[#B4F461] text-black">Donate Now</button>
               </div>
         </div>
-   </div>
+           </div>
+           </div>
         </div>
 
-        <div class="gap-5 p-8 border rounded-lg my-6 w-4/5 mx-auto">
+        <div id="donation-history" class="gap-5 p-8 border rounded-lg my-6 w-4/5 mx-auto hidden">
             
                 <h4 class="text-black text-lg font-bold pb-4">Aid for Injured in the Quota Movement</h4>
                 <p class="text-base font-light pb-5"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. </p>
@@ -111,5 +113,6 @@
     </main>
    <script src="utility.js"></script>
    <script src="main.js"></script>
+   <script src="feature.js"></script>
 </body>
 </html>
