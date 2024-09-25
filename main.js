@@ -10,7 +10,7 @@ document.getElementById('donate-at-noakhali').addEventListener('click', function
     alert('Insufficient Balance')
      }
      else{
-      //alert("Donation successful")
+     
         const date = new Date();
         const accountBalanceNoakhali = getInputTextFieldValueById('account-balance-noakhali');
         const newBalance = addMoney + accountBalanceNoakhali;
@@ -42,7 +42,7 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
      alert('Insufficient Balance')
       }
       else{
-        // alert("Donation successful")
+        
         const date = new Date();
          const accountBalanceFeni = getInputTextFieldValueById('account-balance-feni');
          const newBalance = addMoney + accountBalanceFeni;
@@ -75,7 +75,7 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
      alert('Insufficient Balance')
       }
       else{
-         //alert("Donation successful")
+         
         const date = new Date();
          const accountBalanceInjure = getInputTextFieldValueById('account-balance-injure');
          const newBalance = addMoney + accountBalanceInjure;
