@@ -9,8 +9,11 @@ function getInputTextFieldValueById(id) {
     return inputTextNumber;
 }
 function showSectionById(id){
-   
     document.getElementById('main-donation').classList.add('hidden');
     document.getElementById('donation-history').classList.add('hidden');
+    document.getElementById('donation-blog').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
+}
+function showMyModal(){
+    my_modal_4.showModal()
 }

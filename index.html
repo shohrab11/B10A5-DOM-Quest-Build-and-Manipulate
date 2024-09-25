@@ -16,26 +16,30 @@
     </style>
 </head>
 <body >
-    <nav class="w-full bg-[#F9F7F3] sticky top-0 z-50">
-       <div class="w-4/5 flex justify-between mx-auto py-10">
-                <button class="btn bg-[#B4F461] font-[#111] font-bold px-6" type="button">Blog</button>
-            <div class="flex items-center gap-5">
-                <img src="assets/logo.png" alt="">
-                <h2 class="text-xl font-semibold font-[#111] lg:block hidden">Donate Bangladesh</h2>
-            </div>
-            <div class="flex items-center gap-4">
-                <img src="assets/coin.png" alt="">
-                <h3 class="flex gap-1 font-semibold text-xl font-[#111111b3]"><span id="main-balance">5500</span> BDT</h3>
-            </div>
+    <nav class="w-full sticky top-0 z-50 bg-gray-100 bg-opacity-70">
+       <div class="bg-[#F9F7F3]">
+        <div class="w-4/5 flex justify-between mx-auto py-10">
+            <button id="blog-btn" class="btn bg-[#B4F461] font-[#111] font-bold px-6" type="button">Blog</button>
+            <button id="home-btn" class="hidden btn bg-[#B4F461] font-[#111] font-bold px-6" type="button">Home</button>
+        <div class="flex items-center gap-5">
+            <img src="assets/logo.png" alt="">
+            <h2 class="text-xl font-semibold font-[#111] lg:block hidden">Donate Bangladesh</h2>
+        </div>
+        <div class="flex items-center gap-4">
+            <img src="assets/coin.png" alt="">
+            <h3 class="flex gap-1 font-semibold text-xl font-[#111111b3]"><span id="main-balance">5500</span> BDT</h3>
+        </div>
+   </div>
        </div>
+       <div class="flex justify-center gap-5 mt-12 pb-6"> 
+            <button id="donation-btn" class="btn bg-green-300 font-[#111] font-bold px-6" type="button">Donation</button>
+            <button id="history-btn" class="btn border-[#1111114d] font-[#111] font-bold px-6" type="button">History</button>
+        </div>
     </nav>
     <main class="my-20">
         <div class="w-4/5 mx-auto">
            <div>
-                <div class="flex justify-center gap-5"> 
-                    <button id="donation-btn" class="btn bg-green-300 font-[#111] font-bold px-6" type="button">Donation</button>
-                    <button id="history-btn" class="btn border-[#1111114d] font-[#111] font-bold px-6" type="button">History</button>
-                </div>
+                
            </div>
            <div id="main-donation">
             <div  class="lg:flex gap-5 p-8 border rounded-lg my-6">
@@ -55,7 +59,7 @@
                         <input id="input-amount-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control mt-6">
-                        <button id="donate-at-noakhali" class="btn bg-[#B4F461] text-black">Donate Now</button>
+                        <button id="donate-at-noakhali"  class="btn bg-[#B4F461] text-black">Donate Now</button>
                       </div>
                 </div>
            </div>
@@ -104,32 +108,69 @@
            </div>
         </div>
 
-        <div id="donation-history" class="gap-5 p-8 my-6 w-4/5 mx-auto hidden">
+        <div id="donation-history" class="gap-5 my-6 w-4/5 mx-auto hidden">
           
        </div>
-  <div class="w-4/5 mx-auto">
-    <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+  <div id="donation-blog" class="w-4/5 mx-auto">
+    <h2 class="text-2xl font-extrabold pb-5">Important FAQ ?</h2>
+    
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is document object model (DOM) ?</div>
+          <div class="collapse-content">
+            <p>Document object model is a process of manipulate HTML. Thorough DOM we can create HTML TAG.Add class on the HTML Tag Remove class on the HTML.</p>
+          </div>
         </div>
-      </div>
-      <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+          <div class="collapse-content">
+             <p> JavaScript provides several methods to select DOM elements. Here are some of them </p> 
+                    <ol>
+                        <li>Using getElementById</li>
+                        <li>Using getElementsByClassName</li>
+                        <li>Using Document.querySelector</li>
+                        <li>Using Document.querySelectorAll</li>
+                    </ol>  
+                </div>
+        
         </div>
-      </div>
-      <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is the event delegation in the context of DOM, and why is it useful ?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows us to handle events at a higher level in the DOM tree other than the level where the event was first received</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using DOM ? </div>
+            <div class="collapse-content">
+              <p>The classList object only provide methods to change the class of an element. If we want to change other attributes like id, href, or src, you can use the setAttribute() method.
+                The setAttribute() method accepts two arguments:The value of the attribute to set</p>
+            </div>
+          </div>
         </div>
       </div>
   </div>
+
+  <!-- modal  -->
+  <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+  <dialog id="my_modal_4" class="modal">
+    <div class="modal-box max-w-5xl flex flex-col justify-center items-center w-1/4">
+      <h3 class="text-2xl font-bold">Congratulates!</h3>
+      <img class="w-10" src="assets/coin.png" alt="">
+      <p>You Have donated for Humankind</p>
+      <h3 class="text-lg font-bold">Successfully</h3>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
       
     </main>
    <script src="utility.js"></script>

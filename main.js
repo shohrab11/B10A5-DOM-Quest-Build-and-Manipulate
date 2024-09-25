@@ -10,6 +10,7 @@ document.getElementById('donate-at-noakhali').addEventListener('click', function
     alert('Insufficient Balance')
      }
      else{
+      //alert("Donation successful")
         const date = new Date();
         const accountBalanceNoakhali = getInputTextFieldValueById('account-balance-noakhali');
         const newBalance = addMoney + accountBalanceNoakhali;
@@ -19,13 +20,13 @@ document.getElementById('donate-at-noakhali').addEventListener('click', function
         const title = document.getElementById('title-flood').innerText;
         const div = document.createElement('div');
         div.innerHTML = `
-          <div class=" border rounded-lg p-5 my-5">
+          <div class=" border rounded-lg p-3 my-5">
            <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
                 <p class="text-base font-light pb-5"> ${date} </p>
          </div>
         `
         document.getElementById('donation-history').appendChild(div);
-       
+        showMyModal()
      }
 })
 
@@ -41,6 +42,7 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
      alert('Insufficient Balance')
       }
       else{
+        // alert("Donation successful")
         const date = new Date();
          const accountBalanceFeni = getInputTextFieldValueById('account-balance-feni');
          const newBalance = addMoney + accountBalanceFeni;
@@ -50,12 +52,13 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
          const title = document.getElementById('title-feni').innerText;
          const div = document.createElement('div');
          div.innerHTML = `
-           <div class=" border rounded-lg p-5 my-5">
+           <div class=" border rounded-lg p-3 my-5">
            <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
                 <p class="text-base font-light pb-5"> ${date} </p>
          </div>
          `
          document.getElementById('donation-history').appendChild(div);
+         showMyModal()
         
       }
  })
@@ -72,6 +75,7 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
      alert('Insufficient Balance')
       }
       else{
+         //alert("Donation successful")
         const date = new Date();
          const accountBalanceInjure = getInputTextFieldValueById('account-balance-injure');
          const newBalance = addMoney + accountBalanceInjure;
@@ -81,12 +85,14 @@ document.getElementById('donate-at-feni').addEventListener('click', function(e) 
          const title = document.getElementById('title-aid-injured').innerText;
          const div = document.createElement('div');
          div.innerHTML = `
-         <div class=" border rounded-lg p-5 my-5">
+         <div class=" border rounded-lg p-3 my-5">
            <h4 class="text-black text-lg font-bold pb-4">${addMoney} is Taka  ${title}</h4>
                 <p class="text-base font-light pb-5"> ${date} </p>
          </div>
          `
          document.getElementById('donation-history').appendChild(div);
+         showMyModal()
+
         
       }
  })

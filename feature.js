@@ -13,3 +13,21 @@ document.getElementById('history-btn')
         showSectionById('donation-history');
 
     })
+    document.getElementById('blog-btn')
+    .addEventListener('click', function () {
+        document.getElementById('history-btn').classList.add('hidden');
+        document.getElementById('donation-btn').classList.add('hidden');
+        document.getElementById('blog-btn').classList.add('hidden');
+        document.getElementById('home-btn').classList.remove('hidden');
+        showSectionById('donation-blog');
+
+    })
+    document.getElementById('home-btn')
+    .addEventListener('click', function () {
+        document.getElementById('history-btn').classList.remove('hidden');
+        document.getElementById('donation-btn').classList.remove('hidden');
+        document.getElementById('blog-btn').classList.remove('hidden');
+        document.getElementById('home-btn').classList.add('hidden');
+        showSectionById('main-donation');
+
+    })
